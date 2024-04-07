@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="converter-container">
+    <h1>US Dollar to Canadian Dollar</h1>
+    <p>Convert USD to CAD at the real exchange rate</p>
+
+    <input type="number" id="amount" placeholder="Amount">
+
+    <select id="currencyFrom">
+        <option value="USD">USD</option>
+        <option value="CAD">CAD</option>
+    </select>
+
+    Converted to
+    <input type="text" id="convertedValue" disabled />
+
+    <select id="currencyTo">
+        <option value="CAD">CAD</option>
+        <option value="USD">USD</option>
+    </select>
+
+    <button onclick="convertCurrency()">Convert</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
